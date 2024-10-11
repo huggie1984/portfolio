@@ -1,13 +1,17 @@
 import Image from 'next/image';
 import { ReactNode } from 'react';
-// todo lets add prettier!
+import { DarkModeToggle } from '@/components/dark-mode-toggle/dark-mode-toggle';
+import { Email } from '@/components/icons/Email';
+import { Github } from '@/components/icons/Github';
+import { Linkedin } from '@/components/icons/Linkedin';
 // todo lets add rewrites to subdomain apps.
 // todo add a link to my cv.
 // todo light mode & dark mode.
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] text-amber-50">
+    <div className="flex flex-col min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="container flex flex-col gap-8 items-center sm:items-start">
+        <DarkModeToggle />
         <section className="p-4 bg-blue-800 w-full drop-shadow-2xl flex items-center flex-col md:flex-row gap-8">
           <h1 className="text-5xl font-bold text-amber-50">
             Matthew&#39;s Portfolio
@@ -65,6 +69,10 @@ export default function Home() {
               <p>
                 One of my first encounters of coding was at University, we were
                 tasked to build a simulation that shows the behaviour of birds.
+                based on{' '}
+                <a href="https://www.red3d.com/cwr/boids/" target="_blank">
+                  craig renalds paper
+                </a>
                 In this app you can do ... this and ....
               </p>
               <p>It was implemented with Canvas.</p>
@@ -107,13 +115,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/icons/linkedin.svg"
-            alt="File icon"
-            width={32}
-            height={32}
-          />
+          <Linkedin />
           Linkedin
         </a>
         <a
@@ -122,13 +124,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/icons/github.svg"
-            alt="Window icon"
-            width={32}
-            height={32}
-          />
+          <Github />
           GitHub
         </a>
         <a
@@ -137,13 +133,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
-            aria-hidden
-            src="/icons/email.svg"
-            alt="Globe icon"
-            width={32}
-            height={32}
-          />
+          <Email />
           matthuggett@hotmail.co.uk
         </a>
       </footer>
@@ -160,7 +150,7 @@ const Card = ({
   children: ReactNode;
   gitUrl: string;
 }) => (
-  <div className="flex flex-col gap-4 p-4 bg-cyan-700 rounded-2xl min-w-full">
+  <div className="flex flex-col gap-4 p-4 text-amber-50 bg-cyan-700 rounded-2xl min-w-full">
     <h3 className="text-xl font-bold italic">{title}</h3>
     {children}
     <nav className="flex justify-between mt-auto">
