@@ -1,16 +1,20 @@
 import Image from 'next/image';
-import { ReactNode } from 'react';
 import { DarkModeToggle } from '@/components/dark-mode-toggle/dark-mode-toggle';
 import { Email } from '@/components/icons/Email';
 import { Github } from '@/components/icons/Github';
 import { Linkedin } from '@/components/icons/Linkedin';
-// todo lets add rewrites to subdomain apps.
+import { Card } from '@/components/card/card';
 // todo add a link to my cv.
+// todo re write sudoku app.
+// todo make poker assignment pretty!
 // todo add all text!
+// todo deploy projects to static s3 buckets!
+// todo use next js rewrites to re write to projects!
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <header className="flex gap-6 flex-wrap items-center justify-center">
+        <DarkModeToggle />
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="www.linkedin.com/in/matthew-huggett-611aa098"
@@ -38,7 +42,6 @@ export default function Home() {
           <Email />
           matthuggett@hotmail.co.uk
         </a>
-        <DarkModeToggle />
       </header>
       <main className="container flex flex-col gap-8 items-center sm:items-start">
         <section className="p-4 bg-blue-800 w-full drop-shadow-2xl flex items-center flex-col md:flex-row gap-8">
@@ -108,12 +111,6 @@ export default function Home() {
             </>
           </Card>
           <Card
-            title="Sudoku Legacy"
-            gitUrl="https://github.com/huggie1984/boids-canvas"
-          >
-            <p>Sudoku Legacy description, when, why I wrote it, what i used</p>
-          </Card>
-          <Card
             title="Simon Says"
             gitUrl="https://github.com/huggie1984/boids-canvas"
           >
@@ -140,31 +137,3 @@ export default function Home() {
     </div>
   );
 }
-
-const Card = ({
-  title = '',
-  children,
-  gitUrl,
-}: {
-  title: string;
-  children: ReactNode;
-  gitUrl: string;
-}) => (
-  <div className="flex flex-col gap-4 p-4 text-amber-50 bg-cyan-700 rounded-2xl min-w-full">
-    <h3 className="text-xl font-bold italic">{title}</h3>
-    {children}
-    <nav className="flex justify-between mt-auto">
-      <a
-        className="hover:underline hover:underline-offset-4"
-        href={gitUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Git
-      </a>
-      <a className="hover:underline hover:underline-offset-4" href="">
-        WebSite
-      </a>
-    </nav>
-  </div>
-);
