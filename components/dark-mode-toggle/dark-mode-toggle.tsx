@@ -6,10 +6,10 @@ export const DarkModeToggle = () => {
   const { toggleDarkMode, mode } = useTheme();
   return (
     <button
-      onClick={() => toggleDarkMode()}
-      className="p-4 bg-cyan-700 text-blue-950"
+      className="p-1 bg-blue-950 rounded-full text-[18px] w-[36px] h-[36px] flex justify-center align-middle"
+      onClick={toggleDarkMode}
     >
-      {mode}
+      {mode === 'dark' ? '☀️' : '🌙'}
     </button>
   );
 };

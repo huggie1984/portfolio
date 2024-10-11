@@ -6,12 +6,41 @@ import { Github } from '@/components/icons/Github';
 import { Linkedin } from '@/components/icons/Linkedin';
 // todo lets add rewrites to subdomain apps.
 // todo add a link to my cv.
-// todo light mode & dark mode.
+// todo add all text!
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="container flex flex-col gap-8 items-center sm:items-start">
+      <header className="flex gap-6 flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="www.linkedin.com/in/matthew-huggett-611aa098"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Linkedin />
+          Linkedin
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://github.com/huggie1984"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Github />
+          GitHub
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="mailto:matthuggett@hotmail.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Email />
+          matthuggett@hotmail.co.uk
+        </a>
         <DarkModeToggle />
+      </header>
+      <main className="container flex flex-col gap-8 items-center sm:items-start">
         <section className="p-4 bg-blue-800 w-full drop-shadow-2xl flex items-center flex-col md:flex-row gap-8">
           <h1 className="text-5xl font-bold text-amber-50">
             Matthew&#39;s Portfolio
@@ -108,35 +137,6 @@ export default function Home() {
           </Card>
         </section>
       </main>
-      <footer className="flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="www.linkedin.com/in/matthew-huggett-611aa098"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Linkedin />
-          Linkedin
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://github.com/huggie1984"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Github />
-          GitHub
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="mailto:matthuggett@hotmail.co.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Email />
-          matthuggett@hotmail.co.uk
-        </a>
-      </footer>
     </div>
   );
 }
