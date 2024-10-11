@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textShadow: {
+        'inner': 'inset 2px 2px 4px rgba(0, 0, 0, 0.6)',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
