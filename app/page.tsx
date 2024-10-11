@@ -6,19 +6,21 @@ import { ReactNode } from 'react';
 // todo light mode & dark mode.
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-blue-950 text-amber-50">
-      <main className="container flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <section className="p-4 bg-blue-800 w-full drop-shadow-2xl grid md:grid-cols-2 items-center gap-8">
-          <h1 className="text-5xl font-bold text-amber-50 ">
+    <div className="flex flex-col min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] text-amber-50">
+      <main className="container flex flex-col gap-8 items-center sm:items-start">
+        <section className="p-4 bg-blue-800 w-full drop-shadow-2xl flex items-center flex-col md:flex-row gap-8">
+          <h1 className="text-5xl font-bold text-amber-50">
             Matthew&#39;s Portfolio
           </h1>
-          <Image
-            className="rounded-full border-8"
-            src="/images/profile.webp"
-            alt="Matthew's profile!"
-            width={229}
-            height={262}
-          />
+          <div className="flex flex-grow justify-center md:justify-end">
+            <Image
+              className="rounded-full border-8"
+              src="/images/profile.webp"
+              alt="Matthew's profile!"
+              width={115}
+              height={131}
+            />
+          </div>
         </section>
         <section className="flex flex-col gap-2">
           <p>
@@ -98,7 +100,7 @@ export default function Home() {
           </Card>
         </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+      <footer className="flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="www.linkedin.com/in/matthew-huggett-611aa098"
