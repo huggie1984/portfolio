@@ -10,9 +10,11 @@ import { Card } from '@/components/card/card';
 // todo add all text!
 // todo deploy projects to static s3 buckets!
 // todo use next js rewrites to re write to projects!
+// todo add a bit of info on the architecture of this website!
+// todo, look at integrating the git api to this site and route to the pages in here rather than to an external url.
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen p-8 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col min-h-screen p-4 gap-16 sm:p-10 font-[family-name:var(--font-geist-sans)]">
       <header className="flex gap-6 flex-wrap items-center justify-center">
         <DarkModeToggle />
         <a
@@ -45,12 +47,12 @@ export default function Home() {
       </header>
       <main className="container flex flex-col gap-8 items-center sm:items-start">
         <section className="p-4 bg-blue-800 w-full drop-shadow-2xl flex items-center flex-col md:flex-row gap-8">
-          <h1 className="text-5xl font-bold text-amber-50">
+          <h1 className="text-3xl md:text-4xl font-bold text-amber-50">
             Matthew&#39;s Portfolio
           </h1>
           <div className="flex flex-grow justify-center md:justify-end">
             <Image
-              className="rounded-full border-8"
+              className="rounded-full border-amber-50 border-8"
               src="/images/profile.webp"
               alt="Matthew's profile!"
               width={115}
@@ -124,21 +126,25 @@ export default function Home() {
           </Card>
           <Card
             title="Simon Says Game (HTML5 Canvas)"
-            gitUrl="https://github.com/huggie1984/boids-canvas"
+            gitUrl="https://github.com/huggie1984/simon-says-canvas"
           >
             <p>
               <strong>Throwback to a classic!</strong> This Simon Says game was
               built over 5 years ago using HTML5 Canvas and is a digital take on
-              the iconic memory game. Players must follow an increasingly
-              complex sequence of flashing colors and sounds, testing their
-              memory and reflexes. It may be an older project, but it’s still
-              fun — though it&#39;s about time I gave it a bit of love and
-              attention.
+              the iconic memory game.
+            </p>
+            <p>
+              Players must follow an increasingly complex sequence of flashing
+              colors and sounds, testing their memory and reflexes.
+            </p>
+            <p>
+              It may be an older project, but it’s still fun — though it&#39;s
+              about time I gave it a bit of love and attention.
             </p>
           </Card>
           <Card
             title="Poker Simulation (React)"
-            gitUrl="https://github.com/huggie1984/boids-canvas"
+            gitUrl="https://github.com/huggie1984/poker-assignment"
           >
             <p>
               This project was part of a tech assignment, but it&#39;s a neat
@@ -158,12 +164,12 @@ export default function Home() {
             </p>
           </Card>
           <Card
-            title="Sudoku 2024"
+            title="Sudoku 2024 (In the works!)"
             gitUrl="https://github.com/huggie1984/boids-canvas"
           >
-            <>
-              <p>Under construction!</p>
-            </>
+            <div className="flex flex-col justify-center items-center text-[120px]">
+              <p>{'👷‍♂️'}</p>
+            </div>
           </Card>
         </section>
       </main>
