@@ -94,34 +94,67 @@ export default function Home() {
         </section>
         <section className="grid md:grid-cols-2 gap-8 w-full">
           <Card
-            title="Boids Simulation"
+            title="Boids Simulation (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/boids-canvas"
           >
             <>
               <p>
-                One of my first encounters of coding was at University, we were
-                tasked to build a simulation that shows the behaviour of birds.
-                based on{' '}
+                <strong>AI Flocking Simulation</strong> Inspired by
                 <a href="https://www.red3d.com/cwr/boids/" target="_blank">
-                  craig renalds paper
+                  Craig Reynolds&#39; &#34;Boids&#34; model
                 </a>
-                In this app you can do ... this and ....
+                , this project was one of my first encounters with programming
+                during university.
               </p>
-              <p>It was implemented with Canvas.</p>
+              <p>
+                It simulates the flocking behavior of autonomous agents (boids)
+                using HTML5 Canvas.
+              </p>
+              <p>
+                The boids follow simple rules like separation, alignment, and
+                cohesion, but together they create mesmerizing and complex
+                movement patterns.
+              </p>
+              <p>
+                Now, after years of letting these digital birds fly as they are,
+                I&#39;m planning an update. Get ready as I improve their
+                behavior, making them smarter and maybe a bit sassier too!
+              </p>
             </>
           </Card>
           <Card
-            title="Simon Says"
-            gitUrl="https://github.com/huggie1984/boids-canvas"
-          >
-            <p>Simon Says description, when, why I wrote it, what i used</p>
-          </Card>
-          <Card
-            title="Poker Assignment"
+            title="Simon Says Game (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/boids-canvas"
           >
             <p>
-              Poker Assignment description, when, why I wrote it, what i used
+              <strong>Throwback to a classic!</strong> This Simon Says game was
+              built over 5 years ago using HTML5 Canvas and is a digital take on
+              the iconic memory game. Players must follow an increasingly
+              complex sequence of flashing colors and sounds, testing their
+              memory and reflexes. It may be an older project, but it’s still
+              fun — though it&#39;s about time I gave it a bit of love and
+              attention.
+            </p>
+          </Card>
+          <Card
+            title="Poker Simulation (React)"
+            gitUrl="https://github.com/huggie1984/boids-canvas"
+          >
+            <p>
+              This project was part of a tech assignment, but it&#39;s a neat
+              addition to my portfolio!
+            </p>
+            <p>
+              Built over a year ago using React, it&#39;s a poker simulation
+              where all the cards are drawn and evaluated immediately.
+            </p>
+            <p>
+              While not overly complex, the game still captures the excitement
+              of poker, providing instant results and insights.
+            </p>
+            <p>
+              It&#39;s a simple yet fun way to see poker hands play out, and
+              definitely worth a look for anyone who enjoys quick simulations!
             </p>
           </Card>
           <Card
