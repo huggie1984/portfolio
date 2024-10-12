@@ -4,6 +4,7 @@ import { Email } from '@/components/icons/Email';
 import { Github } from '@/components/icons/Github';
 import { Linkedin } from '@/components/icons/Linkedin';
 import { Card } from '@/components/card/card';
+import { Details } from '@/components/details/details';
 // todo add a link to my cv.
 // todo re write sudoku app.
 // todo make poker assignment pretty!
@@ -99,69 +100,96 @@ export default function Home() {
             title="Boids Simulation (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/boids-canvas"
           >
-            <>
-              <p>
-                <strong>AI Flocking Simulation</strong> Inspired by
-                <a href="https://www.red3d.com/cwr/boids/" target="_blank">
-                  Craig Reynolds&#39; &#34;Boids&#34; model
-                </a>
-                , this project was one of my first encounters with programming
-                during university.
-              </p>
-              <p>
-                It simulates the flocking behavior of autonomous agents (boids)
-                using HTML5 Canvas.
-              </p>
-              <p>
-                The boids follow simple rules like separation, alignment, and
-                cohesion, but together they create mesmerizing and complex
-                movement patterns.
-              </p>
-              <p>
-                Now, after years of letting these digital birds fly as they are,
-                I&#39;m planning an update. Get ready as I improve their
-                behavior, making them smarter and maybe a bit sassier too!
-              </p>
-            </>
+            <Details
+              summaryChildren={
+                <p>
+                  <strong>AI Flocking Simulation</strong> Inspired by
+                  <a href="https://www.red3d.com/cwr/boids/" target="_blank">
+                    Craig Reynolds&#39; &#34;Boids&#34; model
+                  </a>
+                  , this project was one of my first encounters with programming
+                  during university.
+                </p>
+              }
+              readMoreChildren={
+                <>
+                  {' '}
+                  <p>
+                    It simulates the flocking behavior of autonomous agents
+                    (boids) using HTML5 Canvas.
+                  </p>
+                  <p>
+                    The boids follow simple rules like separation, alignment,
+                    and cohesion, but together they create mesmerizing and
+                    complex movement patterns.
+                  </p>
+                  <p>
+                    Now, after years of letting these digital birds fly as they
+                    are, I&#39;m planning an update. Get ready as I improve
+                    their behavior, making them smarter and maybe a bit sassier
+                    too!
+                  </p>
+                </>
+              }
+            />
           </Card>
           <Card
             title="Simon Says Game (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/simon-says-canvas"
           >
-            <p>
-              <strong>Throwback to a classic!</strong> This Simon Says game was
-              built over 5 years ago using HTML5 Canvas and is a digital take on
-              the iconic memory game.
-            </p>
-            <p>
-              Players must follow an increasingly complex sequence of flashing
-              colors and sounds, testing their memory and reflexes.
-            </p>
-            <p>
-              It may be an older project, but it’s still fun — though it&#39;s
-              about time I gave it a bit of love and attention.
-            </p>
+            <Details
+              summaryChildren={
+                <p>
+                  <strong>Throwback to a classic!</strong> This Simon Says game
+                  was built over 5 years ago using HTML5 Canvas and is a digital
+                  take on the iconic memory game.
+                </p>
+              }
+              readMoreChildren={
+                <>
+                  <p>
+                    Players must follow an increasingly complex sequence of
+                    flashing colors and sounds, testing their memory and
+                    reflexes.
+                  </p>
+                  <p>
+                    It may be an older project, but it’s still fun — though
+                    it&#39;s about time I gave it a bit of love and attention.
+                  </p>
+                </>
+              }
+            />
           </Card>
           <Card
             title="Poker Simulation (React)"
             gitUrl="https://github.com/huggie1984/poker-assignment"
           >
-            <p>
-              This project was part of a tech assignment, but it&#39;s a neat
-              addition to my portfolio!
-            </p>
-            <p>
-              Built over a year ago using React, it&#39;s a poker simulation
-              where all the cards are drawn and evaluated immediately.
-            </p>
-            <p>
-              While not overly complex, the game still captures the excitement
-              of poker, providing instant results and insights.
-            </p>
-            <p>
-              It&#39;s a simple yet fun way to see poker hands play out, and
-              definitely worth a look for anyone who enjoys quick simulations!
-            </p>
+            <Details
+              summaryChildren={
+                <p>
+                  This project was part of a tech assignment, but it&#39;s a
+                  neat addition to my portfolio!
+                </p>
+              }
+              readMoreChildren={
+                <>
+                  <p>
+                    Built over a year ago using React, it&#39;s a poker
+                    simulation where all the cards are drawn and evaluated
+                    immediately.
+                  </p>
+                  <p>
+                    While not overly complex, the game still captures the
+                    excitement of poker, providing instant results and insights.
+                  </p>
+                  <p>
+                    It&#39;s a simple yet fun way to see poker hands play out,
+                    and definitely worth a look for anyone who enjoys quick
+                    simulations!
+                  </p>
+                </>
+              }
+            />
           </Card>
           <Card
             title="Sudoku 2024 (In the works!)"

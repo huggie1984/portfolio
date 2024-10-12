@@ -6,13 +6,7 @@ export const Github = () => (
     version="1.1"
     className="w-[32px] h-[32px]"
   >
-    <g
-      id="Page-1"
-      stroke="none"
-      stroke-width="1"
-      fill="none"
-      fill-rule="evenodd"
-    >
+    <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
       <g
         id="Dribbble-Light-Preview"
         transform="translate(-140.000000, -7559.000000)"
