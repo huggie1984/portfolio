@@ -10,7 +10,6 @@ import { ReadMore } from '@/components/read-more/read-more';
 // todo make poker assignment pretty!
 // todo add all text!
 // todo deploy projects to static s3 buckets!
-// todo use next js rewrites to re write to projects!
 // todo add a bit of info on the architecture of this website!
 // todo, look at integrating the git api to this site and route to the pages in here rather than to an external url.
 export default function Home() {
@@ -19,7 +18,7 @@ export default function Home() {
       <header className="flex gap-6 flex-wrap items-center justify-center">
         <DarkModeToggle />
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2 link-dark dark:link-light"
           href="www.linkedin.com/in/matthew-huggett-611aa098"
           target="_blank"
           rel="noopener noreferrer"
@@ -28,7 +27,7 @@ export default function Home() {
           Linkedin
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2 link-dark dark:link-light"
           href="https://github.com/huggie1984"
           target="_blank"
           rel="noopener noreferrer"
@@ -37,7 +36,7 @@ export default function Home() {
           GitHub
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          className="flex items-center gap-2 link-dark dark:link-light"
           href="mailto:matthuggett@hotmail.co.uk"
           target="_blank"
           rel="noopener noreferrer"
