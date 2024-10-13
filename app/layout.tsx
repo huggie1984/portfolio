@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <ThemeProvider>
       <body
-        className={`text-blue-950 dark:text-amber-50 bg-amber-50 dark:bg-blue-950 ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`text-teal-950 dark:text-cyan-50 bg-cyan-50 dark:bg-teal-950 ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

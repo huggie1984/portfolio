@@ -9,12 +9,12 @@ export const Card = ({
   children: ReactNode;
   gitUrl: string;
 }) => (
-  <div className="flex flex-col gap-4 p-4 text-amber-50 bg-cyan-700 rounded-2xl min-w-full">
+  <div className="flex flex-col gap-4 p-4 text-lime-50 bg-lime-700 rounded-2xl min-w-full">
     <h3 className="text-xl font-bold italic">{title}</h3>
     {children}
     <nav className="flex justify-between mt-auto">
       <a
-        className="hover:underline hover:underline-offset-4 flex items-end gap-2"
+        className="flex items-end gap-2 link-light"
         href={gitUrl}
         target="_blank"
         rel="noopener noreferrer"
@@ -49,7 +49,7 @@ export const Card = ({
         </svg>
         View repo
       </a>
-      <a className="hover:underline hover:underline-offset-4" href="">
+      <a className="link-light" href="">
         WebSite
       </a>
     </nav>

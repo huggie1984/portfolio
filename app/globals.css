@@ -25,3 +25,12 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .link-light {
+    @apply text-teal-50 hover:text-teal-200 underline underline-offset-4 font-bold;
+  }
+  .link-dark {
+    @apply text-teal-950 hover:text-teal-800 underline underline-offset-4 font-bold;
+  }
+}
