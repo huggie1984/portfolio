@@ -14,7 +14,7 @@ import { ReadMore } from '@/components/read-more/read-more';
 // todo, look at integrating the git api to this site and route to the pages in here rather than to an external url.
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen p-4 gap-16 sm:p-10 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col min-h-screen p-8 gap-8 font-[family-name:var(--font-geist-sans)]">
       <header className="flex gap-6 flex-wrap items-center justify-center">
         <DarkModeToggle />
         <a

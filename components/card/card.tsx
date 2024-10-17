@@ -12,9 +12,9 @@ export const Card = ({
   <div className="flex flex-col gap-4 p-4 text-lime-50 bg-lime-700 rounded-2xl min-w-full">
     <h3 className="text-xl font-bold italic">{title}</h3>
     {children}
-    <nav className="flex justify-between mt-auto">
+    <nav className="flex justify-between items-end mt-auto">
       <a
-        className="flex items-end gap-2 link-light"
+        className="flex gap-2 link-light"
         href={gitUrl}
         target="_blank"
         rel="noopener noreferrer"
