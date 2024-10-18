@@ -28,9 +28,9 @@ body {
 
 @layer components {
   .link-light {
-    @apply text-teal-50 hover:text-teal-200 underline underline-offset-4 font-bold;
+    @apply text-bamboo-50 hover:text-bamboo-200 underline underline-offset-4 font-bold;
   }
   .link-dark {
-    @apply text-teal-950 hover:text-teal-800 underline underline-offset-4 font-bold;
+    @apply text-bamboo-800 hover:text-bamboo-600 underline underline-offset-4 font-bold;
   }
 }

@@ -9,7 +9,7 @@ export const Card = ({
   children: ReactNode;
   gitUrl: string;
 }) => (
-  <div className="flex flex-col gap-4 p-4 text-lime-50 bg-lime-700 rounded-2xl min-w-full">
+  <div className="flex flex-col gap-4 p-4 text-white bg-bamboo-600 rounded-2xl min-w-full">
     <h3 className="text-xl font-bold italic">{title}</h3>
     {children}
     <nav className="flex justify-between items-end mt-auto">

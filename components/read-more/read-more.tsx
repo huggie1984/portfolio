@@ -20,7 +20,7 @@ export const ReadMore = ({
       <div>{summary}</div>
       {isExpanded && <div className="mt-2">{details}</div>}
       <button
-        className="mt-2 text-teal-950 link-dark dark:link-light underline underline-offset-4 font-bold"
+        className="mt-2 text-bamboo-800 link-dark dark:link-light underline underline-offset-4 font-bold"
         onClick={toggleExpand}
       >
         {isExpanded ? 'Read Less' : 'Read More'}

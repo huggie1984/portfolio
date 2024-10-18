@@ -14,7 +14,7 @@ import { ReadMore } from '@/components/read-more/read-more';
 // todo, look at integrating the git api to this site and route to the pages in here rather than to an external url.
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen p-8 gap-8 font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col min-h-screen gap-8 font-[family-name:var(--font-geist-sans)]">
       <header className="flex gap-6 flex-wrap items-center justify-center">
         <DarkModeToggle />
         <a
@@ -24,7 +24,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <Linkedin />
-          Linkedin
+          <span className="hidden sm:block">Linkedin</span>
         </a>
         <a
           className="flex items-center gap-2 link-dark dark:link-light"
@@ -33,7 +33,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <Github />
-          GitHub
+          <span className="hidden sm:block">GitHub</span>
         </a>
         <a
           className="flex items-center gap-2 link-dark dark:link-light"
@@ -42,25 +42,27 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           <Email />
-          matthuggett@hotmail.co.uk
+          <span className="hidden sm:block">matthuggett@hotmail.co.uk</span>
         </a>
       </header>
-      <main className="container flex flex-col gap-8 items-center sm:items-start">
-        <section className="p-4 bg-teal-800 w-full drop-shadow-2xl flex items-center flex-col md:flex-row gap-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-cyan-50">
-            Matthew&#39;s Portfolio
-          </h1>
-          <div className="flex flex-grow justify-center md:justify-end">
-            <Image
-              className="rounded-full border-cyan-50 border-8"
-              src="/images/profile.webp"
-              alt="Matthew's profile!"
-              width={115}
-              height={131}
-            />
-          </div>
-        </section>
-        <section>
+      <main className="flex flex-col gap-8 items-center sm:items-start">
+        <div className=" bg-bamboo-400 w-full drop-shadow-2xl">
+          <section className="container p-4 flex items-center flex-row gap-4">
+            <h1 className="text-3xl sm:text-4xl font-bold text-white">
+              Matthew&#39;s Portfolio
+            </h1>
+            <div className="flex flex-grow justify-end">
+              <Image
+                className="rounded-full border-bamboo-50 border-2 sm:border-4 sm:w-[115px] sm:h-[131px] w-[57.5px] h-[65.5px] min-w-[57.5px] min-h-[65.5px]"
+                src="/images/profile.webp"
+                alt="Matthew's profile!"
+                width={115}
+                height={131}
+              />
+            </div>
+          </section>
+        </div>
+        <section className="container">
           <ReadMore
             summary={
               <p>
@@ -104,7 +106,7 @@ export default function Home() {
             }
           />
         </section>
-        <section className="grid md:grid-cols-2 gap-8 w-full">
+        <section className="container grid md:grid-cols-2 gap-8 w-full">
           <Card
             title="Boids Simulation (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/boids-canvas"
