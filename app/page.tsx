@@ -110,6 +110,7 @@ export default function Home() {
           <Card
             title="Boids Simulation (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/boids-canvas"
+            siteUrl="https://http.cat/status/404"
           >
             <p>
               <strong>AI Flocking Simulation</strong> Inspired by
@@ -137,6 +138,7 @@ export default function Home() {
           <Card
             title="Simon Says Game (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/simon-says-canvas"
+            siteUrl="https://http.cat/status/404"
           >
             <p>
               <strong>Throwback to a classic!</strong> This Simon Says game was
@@ -155,6 +157,7 @@ export default function Home() {
           <Card
             title="Poker Simulation (React)"
             gitUrl="https://github.com/huggie1984/poker-assignment"
+            siteUrl="https://http.cat/status/404"
           >
             <p>
               This project was part of a tech assignment, but it&#39;s a neat
@@ -176,6 +179,7 @@ export default function Home() {
           <Card
             title="Sudoku 2024 (In the works!)"
             gitUrl="https://github.com/huggie1984/sudoku-2024"
+            siteUrl="https://sudoku.mhuggs.com/"
           >
             <div className="flex flex-col justify-center items-center text-[120px]">
               <p>{'👷‍♂️'}</p>

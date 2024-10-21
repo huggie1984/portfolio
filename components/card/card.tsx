@@ -4,10 +4,12 @@ export const Card = ({
   title = '',
   children,
   gitUrl,
+  siteUrl,
 }: {
   title: string;
   children: ReactNode;
   gitUrl: string;
+  siteUrl: string;
 }) => (
   <div className="flex flex-col gap-4 p-4 text-white bg-bamboo-600 rounded-2xl min-w-full">
     <h3 className="text-xl font-bold italic">{title}</h3>
@@ -49,7 +51,7 @@ export const Card = ({
         </svg>
         View repo
       </a>
-      <a className="link-light" href="">
+      <a className="link-light" href={siteUrl}>
         WebSite
       </a>
     </nav>
