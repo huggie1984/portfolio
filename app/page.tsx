@@ -157,7 +157,7 @@ export default function Home() {
           <Card
             title="Poker Simulation (React)"
             gitUrl="https://github.com/huggie1984/poker-assignment"
-            siteUrl="https://http.cat/status/404"
+            siteUrl="https://poker-simulation.mhuggs.com"
           >
             <p>
               This project was part of a tech assignment, but it&#39;s a neat
