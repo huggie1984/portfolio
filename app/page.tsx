@@ -20,6 +20,7 @@ export default function Home() {
           href="https://www.linkedin.com/in/matthew-huggett-611aa098/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Go to LinkedIn page"
         >
           <Linkedin />
           <span className="hidden sm:block">Linkedin</span>
@@ -29,6 +30,7 @@ export default function Home() {
           href="https://github.com/huggie1984"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Go to GitHub page"
         >
           <Github />
           <span className="hidden sm:block">GitHub</span>
@@ -38,6 +40,7 @@ export default function Home() {
           href="mailto:matthuggett@hotmail.co.uk"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Email me"
         >
           <Email />
           <span className="hidden sm:block">matthuggett@hotmail.co.uk</span>

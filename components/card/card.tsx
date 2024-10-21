@@ -12,7 +12,7 @@ export const Card = ({
   siteUrl: string;
 }) => (
   <div className="flex flex-col gap-4 p-4 text-white bg-bamboo-600 rounded-2xl min-w-full">
-    <h3 className="text-xl font-bold italic">{title}</h3>
+    <h2 className="text-xl font-bold italic">{title}</h2>
     {children}
     <nav className="flex justify-between items-end mt-auto">
       <a
