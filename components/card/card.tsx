@@ -51,7 +51,7 @@ export const Card = ({
         </svg>
         View repo
       </a>
-      <a className="link-light" href={siteUrl}>
+      <a target="_blank" className="link-light" href={siteUrl}>
         WebSite
       </a>
     </nav>
