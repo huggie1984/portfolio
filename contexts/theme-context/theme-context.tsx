@@ -3,14 +3,14 @@
 import { createContext, ReactNode, useContext, useState } from 'react';
 
 const defaultContext = {
-  mode: 'dark', // Default to light mode
+  mode: 'light', // Default to light mode
   toggleDarkMode: () => {},
 };
 
 const ThemeContext = createContext(defaultContext);
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-  const [mode, setMode] = useState<'dark' | 'light'>('dark');
+  const [mode, setMode] = useState<'dark' | 'light'>('light');
 
   const toggleDarkMode = () => {
     setMode((prevMode) => (prevMode == 'dark' ? 'light' : 'dark'));
