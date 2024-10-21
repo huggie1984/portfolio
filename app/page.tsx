@@ -8,8 +8,6 @@ import { ReadMore } from '@/components/read-more/read-more';
 // todo add a link to my cv.
 // todo re write sudoku app.
 // todo make poker assignment pretty!
-// todo add all text!
-// todo deploy projects to static s3 buckets!
 // todo add a bit of info on the architecture of this website!
 // todo, look at integrating the git api to this site and route to the pages in here rather than to an external url.
 export default function Home() {
@@ -19,7 +17,7 @@ export default function Home() {
         <DarkModeToggle />
         <a
           className="flex items-center gap-2 link-dark dark:link-light"
-          href="www.linkedin.com/in/matthew-huggett-611aa098"
+          href="https://www.linkedin.com/in/matthew-huggett-611aa098/"
           target="_blank"
           rel="noopener noreferrer"
         >
