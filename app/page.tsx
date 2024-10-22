@@ -111,7 +111,7 @@ export default function Home() {
           <Card
             title="Boids Simulation (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/boids-canvas"
-            siteUrl="https://http.cat/status/404"
+            siteUrl="https://boids.mhuggs.com"
           >
             <p>
               <strong>AI Flocking Simulation</strong> Inspired by
