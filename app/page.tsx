@@ -114,8 +114,12 @@ export default function Home() {
             siteUrl="https://boids.mhuggs.com"
           >
             <p>
-              <strong>AI Flocking Simulation</strong> Inspired by
-              <a href="https://www.red3d.com/cwr/boids/" target="_blank">
+              <strong>AI Flocking Simulation</strong> Inspired by{' '}
+              <a
+                className="link-light"
+                href="https://www.red3d.com/cwr/boids/"
+                target="_blank"
+              >
                 Craig Reynolds&#39; &#34;Boids&#34; model
               </a>
               , this project was one of my first encounters with programming
@@ -129,11 +133,6 @@ export default function Home() {
               The boids follow simple rules like separation, alignment, and
               cohesion, but together they create mesmerizing and complex
               movement patterns.
-            </p>
-            <p>
-              Now, after years of letting these digital birds fly as they are,
-              I&#39;m planning an update. Get ready as I improve their behavior,
-              making them smarter and maybe a bit sassier too!
             </p>
           </Card>
           <Card

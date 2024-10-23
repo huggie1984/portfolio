@@ -49,10 +49,10 @@ export const Card = ({
             </g>
           </g>
         </svg>
-        View repo
+        <span className="self-end">view repository</span>
       </a>
       <a target="_blank" className="link-light" href={siteUrl}>
-        WebSite
+        see demo
       </a>
     </nav>
   </div>

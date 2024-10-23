@@ -23,7 +23,7 @@ export const ReadMore = ({
         className="mt-2 text-bamboo-800 link-dark dark:link-light underline underline-offset-4 font-bold"
         onClick={toggleExpand}
       >
-        {isExpanded ? 'Read Less' : 'Read More'}
+        {isExpanded ? 'tell me less' : 'tell me more'}
       </button>
     </div>
   );
