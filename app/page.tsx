@@ -6,8 +6,6 @@ import { Linkedin } from '@/components/icons/Linkedin';
 import { Card } from '@/components/card/card';
 import { ReadMore } from '@/components/read-more/read-more';
 // todo add a link to my cv.
-// todo re write sudoku app.
-// todo make poker assignment pretty!
 // todo add a bit of info on the architecture of this website!
 // todo, look at integrating the git api to this site and route to the pages in here rather than to an external url.
 export default function Home() {
@@ -138,7 +136,7 @@ export default function Home() {
           <Card
             title="Simon Says Game (HTML5 Canvas)"
             gitUrl="https://github.com/huggie1984/simon-says-canvas"
-            siteUrl="https://http.cat/status/404"
+            siteUrl="https://simon-says.mhuggs.com"
           >
             <p>
               <strong>Throwback to a classic!</strong> This Simon Says game was
