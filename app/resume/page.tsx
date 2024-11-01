@@ -1,23 +1,27 @@
 import { ExportPdfButton } from '@/components/export-pdf-button/export-pdf-button';
 import Link from 'next/link';
 
-// todo add icons
-// todo adjust text, show what outcomes and how the point did something positive.
-
 export default function Page() {
-  const text3XL = 'text-[3vw] max:text-3xl';
-  const text2XL = 'text-[2vw] max:text-2xl';
-  const textBase = 'text-[1.11vw] max:text-base';
-  const textSM = 'text-[0.97vw] max:text-sm';
+  const text3XL = 'text-3xl';
+  const text2XL = 'text-2xl';
+  const textBase = 'text-base';
+  const textSM = 'text-sm';
   const sectionGrid = 'grid grid-cols-[20%_1fr] gap-6';
 
   return (
-    <div className="container">
+    <div className="md:container">
       <div className="flex gap-6 mb-6">
         <Link href="/" className="link-dark dark:link-light">
           Home
         </Link>
         <ExportPdfButton elementId={'resume'} />
+        <p>Please notes this is a work in progress.</p>
+        <ul>
+          <li>add icons</li>
+          <li>print font sizes for pdf export</li>
+          <li>print image size for pdf export</li>
+          <li>make responsive</li>
+        </ul>
       </div>
 
       <div
@@ -331,9 +335,7 @@ const Skill = ({ value, label }: { value: number; label: string }) => {
   const percentage = ((clampedValue - 1) / 5) * 100;
   return (
     <div className="flex flex-col w-full max-w-md">
-      <div className="text-[1.25vw] max:text-lg font-semibold pb-2">
-        {label}
-      </div>
+      <div className="text-lg font-semibold pb-2">{label}</div>
 
       <div className="w-full h-1 bg-gray-200 rounded-full">
         <div
