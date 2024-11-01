@@ -34,3 +34,19 @@ body {
     @apply text-bamboo-800 hover:text-bamboo-600 underline underline-offset-4 font-bold;
   }
 }
+
+@media print {
+
+  .print-page-break {
+    page-break-before: always;
+  }
+  .print-avoid-break {
+    page-break-inside: avoid;
+  }
+
+}
+
+* {
+  box-sizing: border-box; /* Apply to all elements */
+}
+
