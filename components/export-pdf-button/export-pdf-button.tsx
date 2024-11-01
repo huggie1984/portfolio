@@ -1,25 +1,26 @@
 'use client';
-import html2pdf from 'html2pdf.js';
+import { useCallback } from 'react';
 
-export const ExportPdfButton = ({ elementId }: { elementId: string }) => (
-  <button
-    className="link-dark dark:link-light"
-    onClick={() => generatePdf(elementId)}
-  >
-    Download
-  </button>
-);
+export const ExportPdfButton = ({ elementId }: { elementId: string }) => {
+  const generatePdf = useCallback(async () => {
+    const html2pdf = (await import('html2pdf.js')).default;
+    const element = document.getElementById(elementId) as HTMLElement;
+    if (!element) return;
+    html2pdf()
+      .from(element)
+      .set({
+        margin: [0.05, 0.05, 0.05, 0.05],
+        filename: 'high-resolution-export.pdf',
+        image: { type: 'jpeg', quality: 1.0 },
+        html2canvas: { scale: 3 },
+        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+      })
+      .save();
+  }, [elementId]);
 
-const generatePdf = (elementId: string) => {
-  const element = document.getElementById(elementId) as HTMLElement;
-  html2pdf()
-    .from(element)
-    .set({
-      margin: [0.05, 0.05, 0.05, 0.05],
-      filename: 'high-resolution-export.pdf',
-      image: { type: 'jpeg', quality: 1.0 },
-      html2canvas: { scale: 3 }, // Higher scale improves resolution (default is 1)
-      jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
-    })
-    .save();
+  return (
+    <button className="link-dark dark:link-light" onClick={() => generatePdf()}>
+      Download
+    </button>
+  );
 };

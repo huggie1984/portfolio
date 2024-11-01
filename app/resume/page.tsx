@@ -1,11 +1,15 @@
 import { ExportPdfButton } from '@/components/export-pdf-button/export-pdf-button';
 import Link from 'next/link';
 
+// todo add icons
+// todo adjust text, show what outcomes and how the point did something positive.
+// todo fix fontsizes for export.
+
 export default function Page() {
-  const text3XL = 'text-3xl';
-  const text2XL = 'text-2xl';
-  const textBase = 'text-base';
-  const textSM = 'text-sm';
+  const text3XL = 'text-[3vw] max:text-3xl';
+  const text2XL = 'text-[2vw] max:text-2xl';
+  const textBase = 'text-[1.11vw] max:text-base';
+  const textSM = 'text-[0.97vw] max:text-sm';
   const sectionGrid = 'grid grid-cols-[20%_1fr] gap-6';
 
   return (
@@ -15,13 +19,6 @@ export default function Page() {
           Home
         </Link>
         <ExportPdfButton elementId={'resume'} />
-        <p>Please notes this is a work in progress.</p>
-        <ul>
-          <li>add icons</li>
-          <li>print font sizes for pdf export</li>
-          <li>print image size for pdf export</li>
-          <li>make responsive</li>
-        </ul>
       </div>
 
       <div
@@ -38,39 +35,39 @@ export default function Page() {
               height={131}
             />
 
-            <div className={`flex flex-col gap-2 ${textSM}`}>
-              <div className="flex gap-4 items-start leading-none">
-                <h1 className={`${text3XL} font-black`}>
-                  Matthew Huggett{' '}
-                  <small className="font-light">Full-Stack Web Engineer</small>
-                </h1>
-              </div>
+            <div className={`flex flex-col gap-2 ${textSM} leading-none`}>
+              <h1 className={`${text3XL} font-black`}>Matthew Huggett</h1>
+              <h2 className={`${text3XL} font-black`}>
+                <small className="font-light">Full-Stack Web Engineer</small>
+              </h2>
               <div>
                 29 Leighton Avenue, Leigh-on-Sea, Southend-on-Sea, Essex,
                 Leigh-on-Sea, UK, SS9 1QB
               </div>
-              <a href="tel:07940965305" className="_link_1ps2u_60">
-                07940965305
-              </a>
-              <a
-                href="mailto:matthuggett@hotmail.co.uk"
-                className="_link_1ps2u_60"
-              >
-                matthuggett@hotmail.co.uk
-              </a>
+              <div className="flex gap-6">
+                <a href="tel:07940965305" className="_link_1ps2u_60">
+                  07940965305
+                </a>
+                <a
+                  href="mailto:matthuggett@hotmail.co.uk"
+                  className="_link_1ps2u_60"
+                >
+                  matthuggett@hotmail.co.uk
+                </a>
+              </div>
             </div>
           </header>
           <div className="p-10 w-full bg-[#f1fdfa] text-[#134e4a]">
-            <p className="font-semibold mb-6">
-              Full-Stack Web Engineer with over a decade of extensive expertise
-              in crafting scalable, high-performance web applications using
-              cutting-edge frameworks like Next.js and React. Demonstrates a
-              strong commitment to exceptional coding standards and creating
-              inclusive, accessible digital experiences, while leveraging skills
-              in JavaScript, Node.js, and Bootstrap to align tech solutions with
-              business objectives. Passionate about driving innovation and
-              enhancing user engagement through collaborative efforts with
-              cross-functional teams.
+            <p className="mb-6">
+              <strong>Full-Stack Web Engineer</strong> with over a decade of
+              extensive expertise in crafting scalable, high-performance web
+              applications using cutting-edge frameworks like Next.js and React.
+              Demonstrates a strong commitment to exceptional coding standards
+              and creating inclusive, accessible digital experiences, while
+              leveraging skills in JavaScript, Node.js, and Bootstrap to align
+              tech solutions with business objectives. Passionate about driving
+              innovation and enhancing user engagement through collaborative
+              efforts with cross-functional teams.
             </p>
             <div className="w-full flex flex-col mb-6">
               <SectionTitle title="Employment history" textSize={text2XL} />
@@ -335,7 +332,9 @@ const Skill = ({ value, label }: { value: number; label: string }) => {
   const percentage = ((clampedValue - 1) / 5) * 100;
   return (
     <div className="flex flex-col w-full max-w-md">
-      <div className="text-lg font-semibold pb-2">{label}</div>
+      <div className="text-[1.25vw] max:text-lg font-semibold pb-2">
+        {label}
+      </div>
 
       <div className="w-full h-1 bg-gray-200 rounded-full">
         <div
