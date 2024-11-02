@@ -1,53 +1,50 @@
 import { ExportPdfButton } from '@/components/export-pdf-button/export-pdf-button';
 import Link from 'next/link';
-
-// todo add icons
-// todo adjust text, show what outcomes and how the point did something positive.
-// todo fix fontsizes for export.
+import { Home } from '@/components/icons/Home';
 
 export default function Page() {
-  const text3XL = 'text-[3vw] max:text-3xl';
-  const text2XL = 'text-[2vw] max:text-2xl';
-  const textBase = 'text-[1.11vw] max:text-base';
-  const textSM = 'text-[0.97vw] max:text-sm';
   const sectionGrid = 'grid grid-cols-[20%_1fr] gap-6';
-
   return (
     <div className="md:container">
-      <div className="flex gap-6 mb-6">
-        <Link href="/" className="link-dark dark:link-light">
-          Home
+      <div className="flex gap-6 mb-6 px-4 md:px-0">
+        <Link href="/" className="flex items-center gap-2 link-dark">
+          <Home />
+          <span className="hidden sm:block">Home</span>
         </Link>
         <ExportPdfButton elementId={'resume'} />
       </div>
 
       <div
         id="resume"
-        className={`w-full max-w-none aspect-[1/1.414] flex items-center justify-center ${textBase} bg-black box-border`}
+        className="w-full max-w-none flex items-center justify-center text-[0.70rem] box-border"
       >
         <main className="w-full flex flex-col items-center">
-          <header className="flex gap-4 text-white self-start bg-[#115e59] p-10 w-full">
+          <header className="flex gap-4 text-white self-start bg-[#115e59] p-8 w-full">
             <img
-              className="rounded-xl w-[115px] h-[131px] object-cover"
+              className="rounded-xl w-[92px] h-[105px] object-cover"
               src="/images/profile.webp"
               alt="Matthew's profile!"
-              width={115}
-              height={131}
+              width={92}
+              height={105}
             />
 
-            <div className={`flex flex-col gap-2 ${textSM} leading-none`}>
-              <h1 className={`${text3XL} font-black`}>Matthew Huggett</h1>
-              <h2 className={`${text3XL} font-black`}>
+            <div className="flex flex-col gap-2 text-[0.80rem] leading-none">
+              <h1 className="text-[1.5rem] font-black">
+                Matthew Huggett{' '}
                 <small className="font-light">Full-Stack Web Engineer</small>
-              </h2>
+              </h1>
+
               <div>
-                29 Leighton Avenue, Leigh-on-Sea, Southend-on-Sea, Essex,
-                Leigh-on-Sea, UK, SS9 1QB
+                <span>
+                  29 Leighton Avenue, Leigh-on-Sea, Southend-on-Sea, Essex,
+                  Leigh-on-Sea, UK, SS9 1QB
+                </span>
               </div>
-              <div className="flex gap-6">
+              <div>
                 <a href="tel:07940965305" className="_link_1ps2u_60">
                   07940965305
                 </a>
+                ,{' '}
                 <a
                   href="mailto:matthuggett@hotmail.co.uk"
                   className="_link_1ps2u_60"
@@ -57,8 +54,8 @@ export default function Page() {
               </div>
             </div>
           </header>
-          <div className="p-10 w-full bg-[#f1fdfa] text-[#134e4a]">
-            <p className="mb-6">
+          <div className="p-8 flex flex-col gap-4 w-full text-[#134e4a] bg-white">
+            <p>
               <strong>Full-Stack Web Engineer</strong> with over a decade of
               extensive expertise in crafting scalable, high-performance web
               applications using cutting-edge frameworks like Next.js and React.
@@ -69,208 +66,206 @@ export default function Page() {
               innovation and enhancing user engagement through collaborative
               efforts with cross-functional teams.
             </p>
-            <div className="w-full flex flex-col mb-6">
-              <SectionTitle title="Employment history" textSize={text2XL} />
 
-              <section className={sectionGrid}>
-                <div className="py-4">
-                  <h3 className="font-semibold">
-                    Software Engineer, Game Play Network, Nov 2023 - Present
-                  </h3>
-                </div>
+            <SectionTitle title="Employment history" />
 
-                <div className="py-4">
-                  <ul className="list-disc">
-                    <li>
-                      <p>
-                        Lead Next.js migration to enhance performance and SEO,
-                        driving user engagement growth.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Develop complex visual features with Node.js, React, and
-                        Bootstrap, boosting user interaction.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Improve code quality using CICD task runners for robust
-                        software.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Create custom Node scripts for automation, increasing
-                        team efficiency significantly.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-
-              <section className={sectionGrid}>
-                <div className="py-4">
-                  <h3 className="font-semibold">
-                    Full-Stack Engineering Senior Consultant, Accenture
-                    (formerly Infinity Works), Aug 2023 - Nov 2023
-                  </h3>
-                  <p>National Grid</p>
-                </div>
-
-                <div className="py-4">
-                  <ul className="list-disc">
-                    <li>
-                      <p>
-                        Delivered a Next.js app in 4 months, aligning UI with
-                        business needs using{' '}
-                        <a
-                          href="http://Sanity.io"
-                          target="_blank"
-                          className="_link_19oon_27 _link_pjcz9_9"
-                        >
-                          Sanity.io
-                        </a>
-                        <span>.</span>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Collaborated to deploy on Azure, ensuring high
-                        scalability and availability.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Worked closely with stakeholders and UX team to enhance
-                        user experience, meeting business goals.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-
-              <section className={sectionGrid}>
-                <div className="py-4">
-                  <h3 className="font-semibold">
-                    Full-Stack Engineering Senior Consultant, Accenture
-                    (formerly Infinity Works), Apr 2023 - Aug 2023
-                  </h3>
-                  <p>Monzo</p>
-                </div>
-
-                <div className="py-4">
-                  <ul className="list-disc">
-                    <li>
-                      <p>
-                        Migrated pages to Next.js, boosting performance and
-                        reliability significantly.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Developed e2e tests for for testing migrated pages where
-                        rendering as expected, giving the team and managemnt
-                        comfort that everything was working as expected.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Aligned tech solutions with business goals, leading to
-                        improved user engagement.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-
-              <section className={sectionGrid}>
-                <div className="py-4">
-                  <h3 className="font-semibold">
-                    Full-Stack Engineering Senior Consultant, Accenture
-                    (formerly Infinity Works), Dec 2021 - Dec 2022
-                  </h3>
-                  <p>Virgin Red</p>
-                </div>
-
-                <div className="py-4">
-                  <ul className="list-disc">
-                    <li>
-                      <p>
-                        Enhanced React Native features, improving app efficiency
-                        and user satisfaction.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Rebuilt KPI system with RemixJS SSR, boosting
-                        performance and engagement.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Collaborated with teams to align features with business
-                        goals.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-
-              <section className={sectionGrid}>
-                <div className="py-4">
-                  <h3 className="font-semibold">
-                    Senior Web Engineer, Rank Interactive (formerly Stride), May
-                    2013 - Apr 2022
-                  </h3>
-                </div>
-
-                <div className="py-4">
-                  <ul className="list-disc">
-                    <li>
-                      <p>
-                        Led team in delivering Angular projects, improving code
-                        quality and project delivery.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Converted all the in house business reel and bingo games
-                        to HTML5, making the games more accessible to a wider
-                        audience boosting business revenue.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Collaborated with product managers and engineers to
-                        align projects with business goals.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Implemented modern web techniques, enhancing project
-                        outcomes and technical standards.
-                      </p>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-            </div>
-
-            <div className="w-full mb-6">
-              <SectionTitle title="Education" textSize={text2XL} />
-              <section className="py-4">
+            <section className={sectionGrid}>
+              <div>
                 <h3 className="font-semibold">
-                  Kingston Upon Thames University, Sep 2009 - May 2013
+                  Software Engineer, Game Play Network, Nov 2023 - Present
                 </h3>
-                <p>BSC</p>
-              </section>
-            </div>
+              </div>
+
+              <div>
+                <ul>
+                  <li className="mb-1">
+                    <p>
+                      Lead Next.js migration to enhance performance and SEO,
+                      driving user engagement growth.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Develop complex visual features with Node.js, React, and
+                      Bootstrap, boosting user interaction.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Improve code quality using CICD task runners for robust
+                      software.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Create custom Node scripts for automation, increasing team
+                      efficiency significantly.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section className={sectionGrid}>
+              <div>
+                <h3 className="font-semibold">
+                  Full-Stack Engineering Senior Consultant, Accenture (formerly
+                  Infinity Works), Aug 2023 - Nov 2023
+                </h3>
+                <p>National Grid</p>
+              </div>
+
+              <div>
+                <ul>
+                  <li className="mb-1">
+                    <p>
+                      Delivered a Next.js app in 4 months, aligning UI with
+                      business needs using{' '}
+                      <a
+                        href="http://Sanity.io"
+                        target="_blank"
+                        className="_link_19oon_27 _link_pjcz9_9"
+                      >
+                        Sanity.io
+                      </a>
+                      <span>.</span>
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Collaborated to deploy on Azure, ensuring high scalability
+                      and availability.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Worked closely with stakeholders and UX team to enhance
+                      user experience, meeting business goals.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section className={sectionGrid}>
+              <div>
+                <h3 className="font-semibold">
+                  Full-Stack Engineering Senior Consultant, Accenture (formerly
+                  Infinity Works), Apr 2023 - Aug 2023
+                </h3>
+                <p>Monzo</p>
+              </div>
+
+              <div>
+                <ul>
+                  <li className="mb-1">
+                    <p>
+                      Migrated pages to Next.js, boosting performance and
+                      reliability significantly.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Developed e2e tests for for testing migrated pages where
+                      rendering as expected, giving the team and managemnt
+                      comfort that everything was working as expected.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Aligned tech solutions with business goals, leading to
+                      improved user engagement.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section className={sectionGrid}>
+              <div>
+                <h3 className="font-semibold">
+                  Full-Stack Engineering Senior Consultant, Accenture (formerly
+                  Infinity Works), Dec 2021 - Dec 2022
+                </h3>
+                <p>Virgin Red</p>
+              </div>
+
+              <div>
+                <ul>
+                  <li className="mb-1">
+                    <p>
+                      Enhanced React Native features, improving app efficiency
+                      and user satisfaction.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Rebuilt KPI system with RemixJS SSR, boosting performance
+                      and engagement.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Collaborated with teams to align features with business
+                      goals.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <section className={sectionGrid}>
+              <div>
+                <h3 className="font-semibold">
+                  Senior Web Engineer, Rank Interactive (formerly Stride), May
+                  2013 - Apr 2022
+                </h3>
+              </div>
+
+              <div>
+                <ul>
+                  <li className="mb-1">
+                    <p>
+                      Key squad member contributing to the implementation and
+                      delivery of innovative Angular projects, extending
+                      application lifecycles and modernizing outdated technology
+                      stacks for improved performance and maintainability.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Converted over 30 business games to HTML5, enhancing
+                      accessibility and significantly boosting revenue
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Collaborated with product managers and engineers to align
+                      projects with business goals.
+                    </p>
+                  </li>
+                  <li className="mb-1">
+                    <p>
+                      Implemented modern web techniques, enhancing project
+                      outcomes and technical standards.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+            <SectionTitle title="Education" />
+            <section>
+              <h3 className="font-semibold">
+                Kingston Upon Thames University, Sep 2009 - May 2013
+              </h3>
+              <p>BSC</p>
+            </section>
 
             <div className="h-1 html2pdf__page-break"></div>
 
-            <SectionTitle title="Skills" textSize={text2XL} />
-            <section className="w-full mb-6 grid grid-cols-3 gap-6 py-4">
+            <SectionTitle title="Skills" />
+            <section className="w-full mb-6 grid grid-cols-3 gap-6">
               <Skill label="Next.js" value={5} />
               <Skill label="React" value={6} />
               <Skill label="Webpack" value={5} />
@@ -292,20 +287,15 @@ export default function Page() {
               <Skill label="Javascript" value={6} />
             </section>
 
-            <SectionTitle title="Links" textSize={text2XL} />
-            <section className="w-full mb-6 grid grid-cols-3 gap-6 py-4">
-              <a
-                className="link-dark"
-                href="https://www.linkedin.com/in/matthew-huggett-611aa098/"
-              >
+            <SectionTitle title="Links" />
+            <section className="w-full mb-6 grid grid-cols-3 gap-6">
+              <a href="https://www.linkedin.com/in/matthew-huggett-611aa098/">
                 https://www.linkedin.com/in/matthew-huggett-611aa098/
               </a>
-              <a className="link-dark" href="https://github.com/huggie1984">
+              <a href="https://github.com/huggie1984">
                 https://github.com/huggie1984
               </a>
-              <Link href="/" className="link-dark">
-                https://portfolio.mhuggs.com/
-              </Link>
+              <Link href="/">https://portfolio.mhuggs.com/</Link>
             </section>
           </div>
         </main>
@@ -314,17 +304,11 @@ export default function Page() {
   );
 }
 
-const SectionTitle = ({
-  textSize,
-  title,
-}: {
-  textSize: string;
-  title: string;
-}) => (
-  <>
-    <h2 className={`${textSize} font-black mb-2`}>{title}</h2>
+const SectionTitle = ({ title }: { title: string }) => (
+  <div>
+    <h2 className="text-[1rem] font-black mb-2">{title}</h2>
     <hr />
-  </>
+  </div>
 );
 
 const Skill = ({ value, label }: { value: number; label: string }) => {
@@ -332,11 +316,9 @@ const Skill = ({ value, label }: { value: number; label: string }) => {
   const percentage = ((clampedValue - 1) / 5) * 100;
   return (
     <div className="flex flex-col w-full max-w-md">
-      <div className="text-[1.25vw] max:text-lg font-semibold pb-2">
-        {label}
-      </div>
+      <div className="text-[0.70rem] font-semibold pb-1">{label}</div>
 
-      <div className="w-full h-1 bg-gray-200 rounded-full">
+      <div className="w-full h-[2px] bg-gray-200 rounded-full">
         <div
           className="h-full bg-[#134e4a] rounded-full transition-all duration-300"
           style={{ width: `${percentage}%` }}

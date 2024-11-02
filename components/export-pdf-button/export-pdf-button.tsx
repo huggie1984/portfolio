@@ -1,5 +1,6 @@
 'use client';
 import { useCallback } from 'react';
+import { Download } from '@/components/icons/Download';
 
 export const ExportPdfButton = ({ elementId }: { elementId: string }) => {
   const generatePdf = useCallback(async () => {
@@ -9,18 +10,22 @@ export const ExportPdfButton = ({ elementId }: { elementId: string }) => {
     html2pdf()
       .from(element)
       .set({
-        margin: [0.05, 0.05, 0.05, 0.05],
-        filename: 'high-resolution-export.pdf',
+        margin: 0,
+        filename: 'matthew-huggett-resume.pdf',
         image: { type: 'jpeg', quality: 1.0 },
-        html2canvas: { scale: 3 },
-        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' },
+        html2canvas: { scale: 4 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
       })
       .save();
   }, [elementId]);
 
   return (
-    <button className="link-dark dark:link-light" onClick={() => generatePdf()}>
-      Download
+    <button
+      className="flex items-center gap-2 link-dark"
+      onClick={() => generatePdf()}
+    >
+      <Download />
+      <span className="hidden sm:block">Download</span>
     </button>
   );
 };

@@ -6,6 +6,7 @@ import { Linkedin } from '@/components/icons/Linkedin';
 import { Card } from '@/components/card/card';
 import { ReadMore } from '@/components/read-more/read-more';
 import Link from 'next/link';
+import { Resume } from '@/components/icons/resume';
 // todo add a link to my cv.
 // todo add a bit of info on the architecture of this website!
 // todo, look at integrating the git api to this site and route to the pages in here rather than to an external url.
@@ -44,8 +45,12 @@ export default function Home() {
           <Email />
           <span className="hidden sm:block">matthuggett@hotmail.co.uk</span>
         </a>
-        <Link href="/resume" className="link-dark dark:link-light">
-          Resume
+        <Link
+          href="/resume"
+          className="flex items-center gap-2 link-dark dark:link-light"
+        >
+          <Resume />
+          <span className="hidden sm:block">Resume</span>
         </Link>
       </header>
       <main className="flex flex-col gap-8 items-center sm:items-start">
