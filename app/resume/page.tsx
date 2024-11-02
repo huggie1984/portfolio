@@ -259,7 +259,7 @@ export default function Page() {
               <h3 className="font-semibold">
                 Kingston Upon Thames University, Sep 2009 - May 2013
               </h3>
-              <p>BSC</p>
+              <p>BSc in Computer Science</p>
             </section>
 
             <div className="h-1 html2pdf__page-break"></div>
@@ -277,7 +277,7 @@ export default function Page() {
               <Skill label="Contentful" value={6} />
               <Skill label="Ruby" value={2} />
               <Skill label="React Query" value={5} />
-              <Skill label="Bootsteap" value={6} />
+              <Skill label="Bootstrap" value={6} />
               <Skill label="Sanity-io" value={4} />
               <Skill label="Azure" value={2} />
               <Skill label="AWS" value={3} />
