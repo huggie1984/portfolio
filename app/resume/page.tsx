@@ -1,4 +1,7 @@
-import { ExportPdfButton } from '@/components/export-pdf-button/export-pdf-button';
+import {
+  DownloadButton,
+  ExportPdfButton,
+} from '@/components/export-pdf-button/export-pdf-button';
 import Link from 'next/link';
 import { Home } from '@/components/icons/Home';
 
@@ -11,7 +14,8 @@ export default function Page() {
           <Home />
           <span className="hidden sm:block">Home</span>
         </Link>
-        <ExportPdfButton elementId={'resume'} />
+        {/*<ExportPdfButton elementId={'resume'} />*/}
+        <DownloadButton />
       </div>
 
       <div

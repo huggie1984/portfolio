@@ -29,3 +29,14 @@ export const ExportPdfButton = ({ elementId }: { elementId: string }) => {
     </button>
   );
 };
+
+export const DownloadButton = () => (
+  <a
+    className="flex items-center gap-2 link-dark"
+    download
+    href="/matthew-huggett-resume.pdf"
+  >
+    <Download />
+    <span className="hidden sm:block">Download</span>
+  </a>
+);
