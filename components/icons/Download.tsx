@@ -3,7 +3,7 @@ export const Download = () => (
     width="32px"
     height="32px"
     viewBox="0 0 24 24"
-    className="fill-bamboo-800"
+    className="dark:fill-teal-50 fill-bamboo-800"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path

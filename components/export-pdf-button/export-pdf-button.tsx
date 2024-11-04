@@ -32,7 +32,7 @@ export const ExportPdfButton = ({ elementId }: { elementId: string }) => {
 
 export const DownloadButton = () => (
   <a
-    className="flex items-center gap-2 link-dark"
+    className="flex items-center gap-2 link-dark dark:link-light"
     download
     href="/matthew-huggett-resume.pdf"
   >
