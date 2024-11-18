@@ -8,6 +8,7 @@ import { DownloadButton } from '@/components/export-pdf-button/export-pdf-button
 // todo my box of tricks! XL
 // todo recipe blog! XL
 // todo create a new C.V with google docs to attach and download from my web site.
+// todo put card component in git projects route!
 export default function Home() {
   const sectionGrid = 'grid grid-cols-[20%_1fr] gap-6';
   return (

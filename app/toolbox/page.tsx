@@ -11,62 +11,62 @@ export default function Page() {
         </section>
       </div>
       <ul className="container grid grid-cols-2 gap-6">
-        {/*<li>*/}
-        {/*  <Card title="React Suspense" href="/react-suspense">*/}
-        {/*    <p>React suspense demo</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card title="React Suspense" href="/react-error-boundary">*/}
-        {/*    <p> React Error boundary demo</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card*/}
-        {/*    title="React custom hook, debounce"*/}
-        {/*    href="/react-custom-hook-debounce"*/}
-        {/*  >*/}
-        {/*    <p>React Custom hook, debounce demo</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card title="React custom hook, throttle" href="/">*/}
-        {/*    <p>React Custom hook, throttle demo</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card title="React lazy loading demo" href="/">*/}
-        {/*    <p>React Lazy loading demo</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card title="React portals" href="/">*/}
-        {/*    <p>React portals demo</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card title="React context API" href="/">*/}
-        {/*    <p>React context API demo</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card title="React Controlled vs un controlled" href="/">*/}
-        {/*    <p>React Controlled vs un controlled</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*<li>*/}
-        {/*  <Card title="AI" href="/">*/}
-        {/*    <p>AI</p>*/}
-        {/*  </Card>*/}
-        {/*</li>*/}
-        {/*/!*<li>NODE: Rest API</li>*!/*/}
-        {/*/!*<li>NODE: Web socket integration</li>*!/*/}
-        {/*/!*<li>NODE: Authentication</li>*!/*/}
-        {/*/!*<li>NODE: File upload</li>*!/*/}
-        {/*/!*<li>NODE: Rate limiting</li>*!/*/}
-        {/*/!*<li>Boiler plate component</li>*!/*/}
-        {/*/!*<li>Next Cache</li>*!/*/}
-        {/*/!*<li>Build an npm module.</li>*!/*/}
+        <li>
+          <Card title="React Suspense" href="/react-suspense">
+            <p>React suspense demo</p>
+          </Card>
+        </li>
+        <li>
+          <Card title="React Suspense" href="/react-error-boundary">
+            <p> React Error boundary demo</p>
+          </Card>
+        </li>
+        <li>
+          <Card
+            title="React custom hook, debounce"
+            href="/react-custom-hook-debounce"
+          >
+            <p>React Custom hook, debounce demo</p>
+          </Card>
+        </li>
+        <li>
+          <Card title="React custom hook, throttle" href="/">
+            <p>React Custom hook, throttle demo</p>
+          </Card>
+        </li>
+        <li>
+          <Card title="React lazy loading demo" href="/">
+            <p>React Lazy loading demo</p>
+          </Card>
+        </li>
+        <li>
+          <Card title="React portals" href="/">
+            <p>React portals demo</p>
+          </Card>
+        </li>
+        <li>
+          <Card title="React context API" href="/">
+            <p>React context API demo</p>
+          </Card>
+        </li>
+        <li>
+          <Card title="React Controlled vs un controlled" href="/">
+            <p>React Controlled vs un controlled</p>
+          </Card>
+        </li>
+        <li>
+          <Card title="AI" href="/">
+            <p>AI</p>
+          </Card>
+        </li>
+        {/*<li>NODE: Rest API</li>*/}
+        {/*<li>NODE: Web socket integration</li>*/}
+        {/*<li>NODE: Authentication</li>*/}
+        {/*<li>NODE: File upload</li>*/}
+        {/*<li>NODE: Rate limiting</li>*/}
+        {/*<li>Boiler plate component</li>*/}
+        {/*<li>Next Cache</li>*/}
+        {/*<li>Build an npm module.</li>*/}
       </ul>
     </main>
   );
