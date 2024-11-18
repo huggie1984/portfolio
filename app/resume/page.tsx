@@ -294,7 +294,7 @@ export default function Page() {
             </section>
 
             <SectionTitle title="Links" />
-            <section className="w-full mb-6 grid grid-cols-3 gap-6">
+            <section className="w-full mb-6 flex flex-wrap gap-6">
               <a href="https://www.linkedin.com/in/matthew-huggett-611aa098/">
                 https://www.linkedin.com/in/matthew-huggett-611aa098/
               </a>
