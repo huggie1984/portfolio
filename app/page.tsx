@@ -10,7 +10,7 @@ import { DownloadButton } from '@/components/export-pdf-button/export-pdf-button
 // todo create a new C.V with google docs to attach and download from my web site.
 // todo put card component in git projects route!
 export default function Home() {
-  const sectionGrid = 'grid grid-cols-[20%_1fr] gap-6';
+  const sectionGrid = 'grid grid-cols-1 md:grid-cols-[20%_1fr] gap-2 md:gap-6';
   return (
     <main className="flex flex-col gap-8 items-center sm:items-start">
       <header className="bg-bamboo-400 w-full drop-shadow-2xl">
@@ -77,11 +77,9 @@ export default function Home() {
           <SectionTitle title="Employment history" />
 
           <div className={sectionGrid}>
-            <div>
-              <h3 className="font-semibold">
-                Software Engineer, Game Play Network, Nov 2023 - Present
-              </h3>
-            </div>
+            <h3 className="font-semibold">
+              Software Engineer, Game Play Network, Nov 2023 - Present
+            </h3>
 
             <div>
               <ul>
@@ -114,12 +112,12 @@ export default function Home() {
           </div>
 
           <div className={sectionGrid}>
-            <div>
-              <h3 className="font-semibold">
+            <div className="font-semibold">
+              <h3>
                 Full-Stack Engineering Senior Consultant, Accenture (formerly
                 Infinity Works), Aug 2023 - Nov 2023
               </h3>
-              <p>National Grid</p>
+              <p className="italic">National Grid</p>
             </div>
 
             <div>
@@ -155,12 +153,12 @@ export default function Home() {
           </div>
 
           <div className={sectionGrid}>
-            <div>
-              <h3 className="font-semibold">
+            <div className="font-semibold">
+              <h3>
                 Full-Stack Engineering Senior Consultant, Accenture (formerly
                 Infinity Works), Apr 2023 - Aug 2023
               </h3>
-              <p>Monzo</p>
+              <p className="italic">Monzo</p>
             </div>
 
             <div>
@@ -189,12 +187,12 @@ export default function Home() {
           </div>
 
           <div className={sectionGrid}>
-            <div>
-              <h3 className="font-semibold">
+            <div className="font-semibold">
+              <h3>
                 Full-Stack Engineering Senior Consultant, Accenture (formerly
                 Infinity Works), Dec 2021 - Dec 2022
               </h3>
-              <p>Virgin Red</p>
+              <p className="italic">Virgin Red</p>
             </div>
 
             <div>
@@ -222,12 +220,10 @@ export default function Home() {
           </div>
 
           <div className={sectionGrid}>
-            <div>
-              <h3 className="font-semibold">
-                Senior Web Engineer, Rank Interactive (formerly Stride), May
-                2013 - Apr 2022
-              </h3>
-            </div>
+            <h3 className="font-semibold">
+              Senior Web Engineer, Rank Interactive (formerly Stride), May 2013
+              - Apr 2022
+            </h3>
 
             <div>
               <ul>
