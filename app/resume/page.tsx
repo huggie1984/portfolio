@@ -3,23 +3,12 @@ import {
   // ExportPdfButton,
 } from '@/components/export-pdf-button/export-pdf-button';
 import Link from 'next/link';
-import { Home } from '@/components/icons/Home';
-import { DarkModeToggle } from '@/components/dark-mode-toggle/dark-mode-toggle';
 
 export default function Page() {
   const sectionGrid = 'grid grid-cols-[20%_1fr] gap-6';
   return (
     <div className="md:container">
       <div className="flex gap-6 mb-6 px-4 md:px-0">
-        <DarkModeToggle />
-        <Link
-          href="/"
-          className="flex items-center gap-2 link-dark dark:link-light"
-        >
-          <Home />
-          <span className="hidden sm:block">Home</span>
-        </Link>
-        {/*<ExportPdfButton elementId={'resume'} />*/}
         <DownloadButton />
       </div>
 

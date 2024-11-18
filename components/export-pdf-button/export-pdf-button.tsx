@@ -32,11 +32,11 @@ export const ExportPdfButton = ({ elementId }: { elementId: string }) => {
 
 export const DownloadButton = () => (
   <a
-    className="flex items-center gap-2 link-dark dark:link-light"
+    className="flex items-center gap-2 link-light"
     download
     href="/matthew-huggett-resume.pdf"
   >
     <Download />
-    <span className="hidden sm:block">Download</span>
+    <span className="hidden sm:block">Download resume</span>
   </a>
 );
