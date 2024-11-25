@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { ReactNode } from 'react';
+import { redirect } from 'next/navigation';
 
 export default function Page() {
+  redirect('/in-the-works');
   return (
     <main className="flex flex-col gap-8 items-center sm:items-start">
       <div className=" bg-bamboo-400 w-full drop-shadow-2xl">

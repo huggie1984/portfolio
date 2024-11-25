@@ -16,6 +16,9 @@ const config: Config = {
       roman: 'upper-roman',
     },
     extend: {
+      animation: {
+        'spin-slow': 'spin 5s linear infinite',
+      },
       textShadow: {
         inner: 'inset 2px 2px 4px rgba(0, 0, 0, 0.6)',
       },
