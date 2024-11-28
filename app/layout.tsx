@@ -53,18 +53,18 @@ export default function RootLayout({
               <span className="hidden sm:block">Projects</span>
             </Link>
             <Link
-              href="/toolbox"
-              className="flex items-center gap-2 link-dark dark:link-light"
-            >
-              <Toolbox />
-              <span className="hidden sm:block">Toolbox</span>
-            </Link>
-            <Link
               href="/recipe-blog"
               className="flex items-center gap-2 link-dark dark:link-light"
             >
               <Food />
               <span className="hidden sm:block">Recipe blog</span>
+            </Link>
+            <Link
+              href="/toolbox"
+              className="flex items-center gap-2 link-dark dark:link-light"
+            >
+              <Toolbox />
+              <span className="hidden sm:block">Toolbox</span>
             </Link>
           </nav>
           {children}
