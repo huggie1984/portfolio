@@ -313,7 +313,7 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="Go to GitHub page"
             >
-              <Github />
+              <Github isActive={false} />
               <span className="hidden sm:block">GitHub</span>
             </a>
             <a
