@@ -1,6 +1,10 @@
-export const Food = () => (
+export const Food = ({ isActive }: { isActive: boolean }) => (
   <svg
-    className="dark:fill-teal-50 fill-bamboo-800"
+    className={
+      isActive
+        ? 'dark:fill-bamboo-200 fill-bamboo-600'
+        : 'dark:fill-bamboo-50 fill-bamboo-800'
+    }
     width="32px"
     height="32px"
     viewBox="0 0 50 50"

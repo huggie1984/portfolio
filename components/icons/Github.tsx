@@ -1,4 +1,4 @@
-export const Github = () => (
+export const Github = ({ isActive }: { isActive: boolean }) => (
   <svg
     width="800px"
     height="800px"
@@ -10,7 +10,11 @@ export const Github = () => (
       <g
         id="Dribbble-Light-Preview"
         transform="translate(-140.000000, -7559.000000)"
-        className="dark:fill-teal-50 fill-bamboo-800"
+        className={
+          isActive
+            ? 'dark:fill-bamboo-200 fill-bamboo-600'
+            : 'dark:fill-bamboo-50 fill-bamboo-800'
+        }
       >
         <g id="icons" transform="translate(56.000000, 160.000000)">
           <path

@@ -33,6 +33,12 @@ body {
   .link-dark {
     @apply text-bamboo-800 hover:text-bamboo-600 underline underline-offset-4 font-bold;
   }
+  .link-active-light {
+    @apply text-bamboo-200 underline underline-offset-4 font-bold;
+  }
+  .link-active-dark {
+    @apply text-bamboo-600 underline underline-offset-4 font-bold;
+  }
 }
 
 @media print {
